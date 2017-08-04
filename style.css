@@ -1,0 +1,272 @@
+/*FONTS*/
+@font-face {
+	font-family: Henrik;
+	src: url("assets/Henrik-Regular.otf");
+}
+@font-face {
+	font-family: Cornerstone;
+	src: url("assets/Cornerstone.ttf");
+}
+/*SECTION STYLING*/
+body {
+	overflow-x: hidden;
+	background: #fafafa;
+}
+#header {
+	height: 150px;
+	width: 100vw;
+	background: #fafafa;
+	z-index: 3;
+}
+#body {
+	width: 100vw;
+	background: #fafafa;
+	margin-top: -20px;
+	padding-bottom: 80px;
+	z-index: 2;
+}
+#footer {
+	width: 100vw;
+	height: 120px;
+	background: #2447F9;
+	z-index: 1;
+}
+/*HEADER STYLING*/
+#headerMenu {
+	width: 36px;
+	height: 36px;
+	background: url("assets/menu.png") no-repeat center;
+	background-size: contain;
+	position: absolute;
+	margin-left: 10vw;
+	margin-top: 57px;
+	cursor: pointer;
+}
+#headerLogo {
+	width: 10vw;
+	height: 150px;
+	min-width: 100px;
+	margin-left: 45vw;
+	vertical-align: center;
+	background: url("assets/logo.png") no-repeat center;
+	background-size: contain;
+	cursor: pointer;
+}
+#headerSearch {
+	width: 36px;
+	height: 36px;
+	background: url("assets/search.png") no-repeat center;
+	background-size: contain;
+	float: right;
+	display: inline-block;
+	margin-right: 10vw;
+	margin-top: -93px;
+	cursor: pointer;
+}
+#searchfield {
+	width: 100vw;
+	height: 150px;
+	position: absolute;
+	background: #eaeaea;
+	margin-top: -300px;
+	transition: all 0.20s ease-in-out;
+}
+#searchQuery {
+	position: absolute;
+	width: 100vw;
+	height: 150px;
+	padding-left: 15vw;
+	font-family: Cornerstone,Helvetica,sans-serif;
+	font-size: 50px;
+	color: #333;
+	border: none;
+	outline: none;
+}
+#searchQuery:focus {
+	border-bottom: 10px solid #333;
+}
+#close {
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	background: url("assets/cross.png") no-repeat center;
+	background-size: contain;
+	margin-left: 5vw;
+	margin-top: 59px;
+	font-weight: bold;
+	cursor: pointer;
+}
+#mainMenu {
+	position: absolute;
+	margin-top: -150px;
+	width: 25vw;
+	min-width: 200px;
+	height: 100vh;
+	background: #2447F9;
+	opacity: 1;
+	z-index: 3;
+	transition: all 0.20s ease-in-out;
+	margin-left: -25vw;
+}
+#mainMenu #close {
+	background: url("assets/crossWhite.png") no-repeat center;
+	background-size: contain;
+	position: absolute;
+	width: 25vw;
+	margin-left: 0;
+}
+#mainMenu ul {
+	width: 20vw;
+	height: 100vh;
+	margin-left: 5vw;
+	margin-top: 180px;
+}
+#mainMenu ul li {
+	width: 200px;
+	padding: 20px 0 20px 20px;
+	margin-left: -40px;
+	margin-top: 30px;
+	list-style: none;
+}
+#mainMenu ul li a {
+	text-decoration: none;
+	color: #fff;
+	font-family: Henrik, Georgia, serif;
+	font-size: 25px;
+	transition: all 0.20s ease-in-out;
+}
+#mainMenu ul li a:hover {
+	padding-left: 20px;
+}
+/*BODY STYLING*/
+.post {
+	position: inherit;
+	width: 100vw;
+	height: 500px;
+	margin-top: 40px;
+	z-index: -1;
+}
+h3.postTitle {
+	position: absolute;
+	width: 50vw;
+	height: 80px;
+	margin-left: 25vw;
+	font-family: Henrik, Georgia, serif;
+	font-size: 33px;
+	text-align: center;
+	margin-top: 20px;
+	color: #333;
+}
+span.postDate {
+	position: absolute;
+	width: 30vw;
+	height: 20px;
+	margin-left: 35vw;
+	margin-top: 100px;
+	font-family: Cornerstone,Helvetica,sans-serif;
+	font-size: 18px;
+	text-align: center;
+	color: #333;
+}
+span.postDate::before {
+	content: "";
+	width: 5vw;
+	height: 4px;
+	background: #333;
+	position: absolute;
+	margin-left: -10vw;
+	margin-top: 8px;
+}
+span.postDate::after {
+	content: "";
+	width: 5vw;
+	height: 4px;
+	background: #333;
+	position: absolute;
+	margin-left: 5vw;
+	margin-top: 8px;
+}
+img.postComic {
+	position: absolute;
+	width: 70vw;
+	height: 350px;
+	margin-left: 15vw;
+	margin-top: 140px;
+	border: 2px solid #333;
+}
+span.postNumber {
+	font-family: Cornerstone;
+	font-size: 30px;
+	color: #2447F9;
+	float: right;
+	margin-right: 9vw;
+	transform: rotate(90deg);
+	margin-top: 155px;
+}
+div.postShare {
+	position: absolute;
+	width: 32px;
+	height: 116px;
+	margin-left: 10vw;
+	margin-top: 140px;
+}
+span.facebook {
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	background: url("assets/facebook.png") no-repeat center;
+	background-size: 60%;
+}
+span.twitter {
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	background: url("assets/twitter.png") no-repeat center;
+	background-size: 60%;
+	margin-top: 42px;
+}
+span.mail {
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	background: url("assets/mail.png") no-repeat center;
+	background-size: 60%;
+	margin-top: 84px;
+}
+/*FOOTER STYLING*/
+#footerLogo {
+	position: absolute;
+	background: url("assets/logo white.png") no-repeat center;
+	background-size: 30%;
+	width: 20vw;
+	height: 120px;
+	margin-left: 40vw;
+}
+#footerLinks {
+	width: 100vw;
+	height: 120px;
+	position: absolute;
+}
+#footerLinks a {
+	text-decoration: none;
+	color: #fff;
+	font-family: Henrik, Georgia, serif;
+	font-size: 20px;
+	margin-top: 50px;
+}
+a#linkComics {
+	float: left;
+	margin-left: 15vw;
+}
+a#linkAbout {
+	float: left;
+	margin-left: 10vw;
+}
+a#linkContact {
+	float: right;
+	margin-right: 15vw;
+}
+a#linkFaq {
+	float: right;
+	margin-right: 10vw;
+}
