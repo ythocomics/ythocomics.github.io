@@ -48,7 +48,7 @@ body {
 	min-width: 100px;
 	margin-left: 45vw;
 	vertical-align: center;
-	background: url("assets/Capture.png") no-repeat center;
+	background: url("assets/capture.png") no-repeat center;
 	background-size: contain;
 	cursor: pointer;
 }
